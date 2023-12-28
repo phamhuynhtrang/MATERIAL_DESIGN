@@ -6,11 +6,14 @@
     <title>MaterialDesign</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600&family=Kalnia:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
+    
+    
     <div class="app">
         <div class="nav">
             <a class="nav-head bar-item" href="https://www.w3schools.com/" >
@@ -23,12 +26,22 @@
                 <li class="bar-item"><a href="">Link 3</a></li>
                 <li class="bar-item"><a href="">Link 4</a></li>
                 <li class="bar-item"><a href="">Link 5</a></li>
-                <li class="bar-item"><a href="">Dropdown</a></li>
+                <li class="bar-item" id="myid"><span>Dropdown
+                    <i class="ti-angle-down menu-icon"></i>
+                </span></li>
+            </ul>
+            <ul class="menu-sec dp-none ">
+                <li class="bar-item"><a href="">Link</a></li>
+                <li class="bar-item"><a href="">Link</a></li>
+                <li class="bar-item"><a href="">Link</a></li>
             </ul>
         </div>
         <div class="container">
+            <div class="my_top">
+                <p>W3.CSS: Introduction</p>
+            </div>
             <header class="header">
-                <h1>W3.CSS</h1>
+                <h1 id="p2">W3.CSS</h1>
             </header>
             <div class="content">
                 <h2 class="content-header">What is W3.CSS?</h2>
@@ -41,27 +54,57 @@
                     <li>Provides CSS equality for all devices. PC, laptop, tablet, and mobile:</li>
                 </ul>  
                 <img class="content-img" src="/assets/image/img_responsive.png" alt="band of w3">           
+                <hr>
                 <h2 class="content-header">W3.CSS is Free</h2>
-                <p>W3.CSS is free to use. No license is necessary.</p>
+                <p calss="content-footer" >W3.CSS is free to use. No license is necessary.</p>
+                <hr>
                 <h2 class="content-header">Easy to Use</h2>
-                <ul class="bor-left">
+                <ul class="bor-left bg-sand">
                     <li>Make it as simple as possible, but not simpler.</li>
                     <li>Albert Einstein</li>
                 </ul>
+                <hr>
                 <h2 class="content-header">W3.CSS Web Site Templates</h2>
                 <p>We have created some responsive W3CSS templates for you to use.</p>
+                <br>
                 <p>You are free to modify, save, share, use or do whatever you want with them:</p>
-                <img class="content-img" src="/assets/image/img_temp_band.jpg" alt="">
-                <img class="content-img" src="/assets/image/img_temp_blog.jpg" alt="">
+                <div class="br-sec" >
+                    <h3>Band Template</h3>
+                    <img class="content-img" src="/assets/image/img_temp_band.jpg" alt="">
+                    <div class="img-button">
+                        <button class="button">
+                            Demo
+                        </button>
+                        <button class="button">
+                            More Templates
+                            <i class="ti-angle-double-right button-icon"></i>
+                        </button>
+                    </div>
+                </div>   
+                <div class="br-sec" >
+                    <h3>Blog Template</h3>
+                    <img class="content-img" src="/assets/image/img_temp_blog.jpg" alt="">
+                    <div class="img-button">
+                        <button class="button">
+                            Demo
+                        </button>
+                        <button class="button">
+                            More Templates
+                            <i class="ti-angle-double-right button-icon"></i>
+                        </button>
+                    </div>
+                </div>                 
                 
             </div>
-
             <footer class="footer">
-
+                <p>Footer information goes here</p>
             </footer>
 
         </div>
 
     </div>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        </script>
 </body>
 </html>

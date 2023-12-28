@@ -15,6 +15,7 @@ html{
     font-size: 100%;
     line-height: 1.6rem;
 }
+
 .bar-item {
     width: 100%; 
     padding: 16px 16px;
@@ -40,11 +41,32 @@ html{
 }
 .menu li {
     list-style: none;
+    cursor: pointer;
 }
-.menu li a {
+.menu li:hover, 
+.menu-sec li:hover {
+    background-color: #c6c4c4;
+}
+.menu li a, .menu li span {
     text-decoration: none;
     color: #000;
-    font-weight: bold;
+    font-weight: 700;
+}
+.dp-none {
+    display: none;
+}
+.dp-block {
+    display: block;
+
+}
+.bg-pri {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.menu-sec li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
 }
 .menu li:first-child {
     background-color: var(--primary-color);
@@ -53,9 +75,23 @@ html{
 .menu li:first-child a{
     color: #fff ;
 }
+.menu .menu-icon {
+    font-size: 10px;
+}
+
 .container  {
     margin-left: 250px;
 }
+.my_top {
+    background-color: var(--primary-color);
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 16px 16px;
+    position: fixed;
+}
+
 .header  {
     background-color: var(--primary-color);
     color: #fff;
@@ -87,10 +123,66 @@ html{
     font-weight: 400;
 
 }
-
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin: 16px 0px;
+    
+}
 .content-img {
     width: 100%;
+    margin: 8px 0px;
+}
+
+.content-footer::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #db1d1d ;
+}
+hr {
+    border: 0;
+    margin: 24px 0;
+    border-top: 1px solid #eee;
+}
+
+.bg-sand {
+    background-color: #fdf5e6!important;
+    padding: 8px!important;
+    font-style: italic;
+}
+.img-button {
+    display:flex;
+    justify-content: space-between;
+}
+.button{
+    width: 49.7%;
+    background-color: #616161;
+    padding: 16px 0px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #c9c9c8;
+    color: #000;
+}
+.br-sec {
+    background-color: var(--secondary-color);
+    margin-top: 16px;
+    padding: 16px 16px;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.button-icon {
+    font-size: 10px;
 }
 .footer  {
-
+    padding: 32px 32px;
+    background-color: var(--primary-color);
+}
+.footer p{
+    margin: 15px 0px;
+    color: #fff;
 }
