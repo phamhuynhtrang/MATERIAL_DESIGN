@@ -11,7 +11,7 @@ console.log(menusecNode.classList);
 
         
 };
-const element1 = document.querySelector('.app')
+const element1 = document.querySelector('.app');
 console.log({element:element1} );
 element1.onscroll = function (){
   console.log(element.scrollLeft);
