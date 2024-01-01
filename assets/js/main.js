@@ -7,12 +7,9 @@ dropNode.onclick=function(){
     menusecNode.classList.toggle('dp-none');
     menusecNode.classList.toggle('dp-block');
 console.log(menusecNode.classList);
-
-
-        
 };
-const element1 = document.querySelector('.app');
-console.log({element:element1} );
-element1.onscroll = function (){
-  console.log(element.scrollLeft);
-};
+const appNode = document.querySelector('.app');
+console.log({element:appNode} );
+// appNode.onscroll = function (){
+//   console.log(element.scrollLeft);
+//};
